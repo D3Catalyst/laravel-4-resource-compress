@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-0": {
-            "D3Catalyst\\Resourcecompress\\": "src/"
+            "D3Catalyst\\Compress\\": "src/"
         }
     }
 }
