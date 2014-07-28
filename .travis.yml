@@ -7,8 +7,8 @@ php:
 before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
-  - sudo find ./public/ -type d -exec chmod 777 {} +
-  - pwd
+  - chmod 777 public/ -R
+  - cd public/full/
   - ls -lah
 
 script: phpunit
