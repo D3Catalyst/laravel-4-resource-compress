@@ -64,6 +64,11 @@ class Compress
  	private $last_js_array 		= NULL;
 
  	/*
+ 	* Set tru when use in unit testing
+ 	*/
+ 	private $unit_testing 		= false;
+
+ 	/*
  	* Contruct
  	* Set default path's for files
  	*/
@@ -115,6 +120,15 @@ class Compress
  	}
 
  	/*
+ 	* Set true when need test with unit testing
+ 	* @return void
+ 	*/
+ 	public function unit_test($status) {
+ 		if(is_bool($status))
+ 			$this->unit_test = $status;
+ 	}
+
+ 	/*
  	* Get debug curl data
  	* @return array mix information of optimization
  	*/
@@ -161,6 +175,8 @@ class Compress
  			$this->error_data = "Error Processing Request for PNG optimization";
  			return false;
  		}
+
+ 		if($this->unit_testing) return true;
 
  		if($this->debug_enabled) {
 	 		
@@ -229,6 +245,8 @@ class Compress
  			return false;
  		}
 
+ 		if($this->unit_testing) return true;
+
  		if($this->debug_enabled) {
 	 		
 	 		$info['mime_type'] 		= $this->debug_data['content_type'];
@@ -294,6 +312,8 @@ class Compress
  			$this->error_data = "Error Processing Request for Css optimization";
  			return false;
  		}
+
+ 		if($this->unit_testing) return true;
 
  		if($this->debug_enabled) {
 	 		
@@ -410,6 +430,8 @@ class Compress
  			$this->error_data = "Error Processing Request for Css optimization";
  			return false;
  		}
+
+ 		if($this->unit_testing) return true;
 
  		if($this->debug_enabled) {
 	 		
@@ -581,6 +603,8 @@ class Compress
 			$this->error_data = $curl_error;	
 			return false;
 		}
+
+		if($this->unit_testing) return true;
 
 	    $fp = @fopen($target,'w');
 	    fwrite($fp, $response); 

@@ -27,13 +27,8 @@ class CompressTest extends PHPUnit_Framework_TestCase{
   */
   public function testJpgSingleCompress(){
   	$var = new D3Catalyst\Compress\Compress;
-    $img = "jpgs/jpg1.jpg";
-    $fp = $var->jpg($img);
-    $dd = $var->getDebugData();
-    $ed = $var->getErrorData();
-    fwrite(STDERR, print_r($dd, TRUE));
-    fwrite(STDERR, print_r($ed, TRUE));
-  	$this->assertTrue($fp !== false);
+    $var->unit_test(true);
+  	$this->assertTrue($var->jpg("jpgs/jpg1.jpg") !== false);
   	unset($var);
   }
 
@@ -42,8 +37,8 @@ class CompressTest extends PHPUnit_Framework_TestCase{
   */
   public function testPngSingleCompress(){
     $var = new D3Catalyst\Compress\Compress;
-    $img = "pngs/png1.png";
-    $this->assertTrue($var->png($img) !== false);
+    $var->unit_test(true);
+    $this->assertTrue($var->png("pngs/png1.png") !== false);
     unset($var);
   }
   
