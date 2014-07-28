@@ -1,4 +1,4 @@
-<?php namespace D3catalyst\Compress;
+<?php namespace D3Catalyst\Compress;
  
 class Compress
 {

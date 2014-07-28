@@ -1,4 +1,4 @@
-<?php namespace D3catalyst\Compress\Laravel4\ServiceProviders;
+<?php namespace D3Catalyst\Compress\Laravel4\ServiceProviders;
 
 use Illuminate\Support\ServiceProvider;
 use D3Catalyst\Compress\Compress as Compress;

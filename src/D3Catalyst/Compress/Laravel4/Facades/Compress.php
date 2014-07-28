@@ -1,4 +1,4 @@
-<?php namespace D3catalyst\Compress\Laravel4\Facades;
+<?php namespace D3Catalyst\Compress\Laravel4\Facades;
  
 use Illuminate\Support\Facades\Facade;
  
