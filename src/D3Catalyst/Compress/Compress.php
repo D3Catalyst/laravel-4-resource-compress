@@ -161,7 +161,7 @@ class Compress
  		$png_info 				= getimagesize($base_file);
  		$path_info 				= pathinfo($base_file);
 
- 		if($jpg_info['mime']!='image/png') {
+ 		if($png_info['mime']!='image/png') {
  			$this->error_data = "Invalid png file, FILE[$png_file] - {$png_info['mime']}";
  			return false;
  		}
