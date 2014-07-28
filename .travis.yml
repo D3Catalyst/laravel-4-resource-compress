@@ -6,13 +6,12 @@ php:
 before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
+  - mkdir /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/
+  - mkdir /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/
+  - mkdir /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/
+  - mkdir /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/jpgs/
+  - mkdir /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/pngs/
   - sudo chmod 777 -R /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/
-  - mkdir public/
-  - mkdir public/d3compress/
-  - mkdir public/d3compress/full/
-  - mkdir public/d3compress/full/jpgs/
-  - mkdir public/d3compress/full/pngs/
-  - chmod 777 public/ -R
   - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/jpgs/jpg1.jpg http://www.d3catalyst.com/d3compress/full/jpgs/jpg1.jpg
   - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/jpgs/jpg2.jpg http://www.d3catalyst.com/d3compress/full/jpgs/jpg2.jpg
   - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/pngs/png1.png http://www.d3catalyst.com/d3compress/full/pngs/png1.png
