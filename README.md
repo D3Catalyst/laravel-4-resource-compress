@@ -1,7 +1,7 @@
 laravel-4-resource-compress
 ===============
 
-[![Build Status](https://travis-ci.org/D3Catalyst/laravel-4-resource-compress.svg?branch=master)](https://travis-ci.org/D3Catalyst/laravel-4-resource-compress)  ![stable](http://img.shields.io/badge/stable-v%201.0.0-blue.svg)
+[![Build Status](https://travis-ci.org/D3Catalyst/laravel-4-resource-compress.svg?branch=master)](https://travis-ci.org/D3Catalyst/laravel-4-resource-compress) [![Latest Stable Version](https://poser.pugx.org/d3catalyst/l4-resource-compress/v/stable.svg)](https://packagist.org/packages/d3catalyst/l4-resource-compress) [![Total Downloads](https://poser.pugx.org/d3catalyst/l4-resource-compress/downloads.svg)](https://packagist.org/packages/d3catalyst/l4-resource-compress) [![Latest Unstable Version](https://poser.pugx.org/d3catalyst/l4-resource-compress/v/unstable.svg)](https://packagist.org/packages/d3catalyst/l4-resource-compress) [![License](https://poser.pugx.org/d3catalyst/l4-resource-compress/license.svg)](https://packagist.org/packages/d3catalyst/l4-resource-compress) ![stable](http://img.shields.io/badge/stable-v%201.0.0-blue.svg)
 
 Laravel 4 Library for calling http://cssminifier.com/ API.
 
@@ -40,10 +40,13 @@ Usage
 	`public_path('d3compress/min/')`
 
 Set uncompressed path
+
 	`Compress::setUncompressedPath('new/path/uncompressed/')`
 
 Set compressed path
+
 	`Compress::setUncompressedPath('new/path/compressed/')`
 
 Optimise PNG file
+
 	`Compress::png('image.png')`
