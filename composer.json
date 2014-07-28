@@ -1,0 +1,28 @@
+{
+    "name": "d3catalyst/l4-resource-compress",
+    "description": "Laravel 4 Library for compress resources, jpg, png, css and js files, powered by cssminifier.com.",
+    "keywords": ["d3catalyst.com", "compress", "minify", "optimiser", "jpg optimiser", "png optimiser", "css optimiser", "js optimiser"],
+    "license": "MIT",
+    "homepage": "http://laravel.d3catalyst.com/l4-resource-compress/",
+    "authors": [
+        {
+            "name": "Ricardo Madrigal",
+            "email": "soporte@d3catalyst.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.7",
+        "ext-curl" : "*",
+        "lib-curl" : "*"
+    },
+    "require-dev": {        
+        "phpunit/phpunit": "3.7.*",
+        "phpdocumentor/phpdocumentor": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "D3Catalyst\\Resourcecompress\\": "src/"
+        }
+    }
+}
