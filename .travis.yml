@@ -7,5 +7,13 @@ before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
   - sudo chmod 777 -R /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/
+  - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/jpgs/jpg1.jpg http://www.d3catalyst.com/d3compress/full/jpgs/jpg1.jpg
+  - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/jpgs/jpg2.jpg http://www.d3catalyst.com/d3compress/full/jpgs/jpg2.jpg
+  - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/pngs/png1.png http://www.d3catalyst.com/d3compress/full/pngs/png1.png
+  - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/pngs/png2.png http://www.d3catalyst.com/d3compress/full/pngs/png2.png
+  - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/csstest1.css http://www.d3catalyst.com/d3compress/full/csstest1.css
+  - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/csstest2.css http://www.d3catalyst.com/d3compress/full/csstest2.css
+  - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/jstest1.js http://www.d3catalyst.com/d3compress/full/jstest1.js
+  - wget -O /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/jstest2.js http://www.d3catalyst.com/d3compress/full/jstest2.js
 
 script: phpunit
