@@ -41,5 +41,25 @@ class CompressTest extends PHPUnit_Framework_TestCase{
     $this->assertTrue($var->png("pngs/png1.png") !== false);
     unset($var);
   }
+
+  /**
+  * Css Optimization test
+  */
+  public function testCssSingleCompress(){
+    $var = new D3Catalyst\Compress\Compress;
+    $var->unit_test(true);
+    $this->assertTrue($var->css("csstest1.css") !== false);
+    unset($var);
+  }
+
+  /**
+  * Js Optimization test
+  */
+  public function testCssSingleCompress(){
+    $var = new D3Catalyst\Compress\Compress;
+    $var->unit_test(true);
+    $this->assertTrue($var->js("jstest1.js") !== false);
+    unset($var);
+  }
   
 }
