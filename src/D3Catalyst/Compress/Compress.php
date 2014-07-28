@@ -124,8 +124,7 @@ class Compress
  	* @return void
  	*/
  	public function unit_test($status) {
- 		if(is_bool($status))
- 			$this->unit_test = $status;
+ 			$this->unit_testing = $status;
  	}
 
  	/*
