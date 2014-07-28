@@ -68,8 +68,14 @@ class Compress
  	* Set default path's for files
  	*/
  	public function __construct() {
- 		$this->file_base_path 	= public_path('d3compress/full/');
- 		$this->file_target_path = public_path('d3compress/min/');
+		if (function_exists('public_path')) {
+			$this->file_base_path 	= public_path('d3compress/full/');
+ 			$this->file_target_path = public_path('d3compress/min/');
+		} else {
+			// For travis testing
+			$this->file_base_path 	= './public/d3compress/full/';
+ 			$this->file_target_path = './public/d3compress/min/';
+		}
  	}
 
  	/*
