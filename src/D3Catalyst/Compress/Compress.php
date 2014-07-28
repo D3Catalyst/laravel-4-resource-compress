@@ -73,8 +73,8 @@ class Compress
  			$this->file_target_path = public_path('d3compress/min/');
 		} else {
 			// For travis testing
-			$this->file_base_path 	= './public/d3compress/full/';
- 			$this->file_target_path = './public/d3compress/min/';
+			$this->file_base_path 	= 'public/d3compress/full/';
+ 			$this->file_target_path = 'public/d3compress/min/';
 		}
  	}
 
