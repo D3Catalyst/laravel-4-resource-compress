@@ -582,7 +582,7 @@ class Compress
 			return false;
 		}
 
-	    $fp = fopen($target,'w');
+	    $fp = @fopen($target,'w');
 	    fwrite($fp, $response); 
 	    fclose($fp);
 
