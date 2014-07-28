@@ -55,7 +55,7 @@ class CompressTest extends PHPUnit_Framework_TestCase{
   /**
   * Js Optimization test
   */
-  public function testCssSingleCompress(){
+  public function testJsSingleCompress(){
     $var = new D3Catalyst\Compress\Compress;
     $var->unit_test(true);
     $this->assertTrue($var->js("jstest1.js") !== false);
