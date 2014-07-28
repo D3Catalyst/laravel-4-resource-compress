@@ -27,7 +27,7 @@ class CompressTest extends PHPUnit_Framework_TestCase{
   */
   public function testJpgSingleCompress(){
   	$var = new D3Catalyst\Compress\Compress;
-    $img = "jpgs/jp1.jpg";
+    $img = "jpgs/jpg1.jpg";
     $fp = $var->jpg($img);
     $dd = $var->getDebugData();
     $ed = $var->getErrorData();

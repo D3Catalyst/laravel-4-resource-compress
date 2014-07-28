@@ -9,6 +9,8 @@ before_script:
   - composer install --prefer-source --no-interaction --dev
   - pwd
   - ls -la
+  - ls -la /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/
+  - ls -lah /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/d3compress/full/
   - chmod 777 /home/travis/build/D3Catalyst/laravel-4-resource-compress/public/ -R
 
 script: phpunit
