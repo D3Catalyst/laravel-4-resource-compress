@@ -25,28 +25,37 @@ Add the service provider and facade in your config/app.php
 
 Service Provider
 
-    `'D3Catalyst\Compress\Laravel4\ServiceProviders\Compress'`
+    'D3Catalyst\Compress\Laravel4\ServiceProviders\CompressServiceProvider'
 
 Facade
 
-	`'Compress'           => 'D3Catalyst\Compress\Laravel4\Facades\Compress',`
+	'Compress'           => 'D3Catalyst\Compress\Laravel4\Facades\Compress',
 
 Usage
 =====
 
-	Default uncompress and compressed resource path's.
+Default uncompress and compressed resource path's.
 
-	`public_path('d3compress/full/')`
-	`public_path('d3compress/min/')`
+	public_path('d3compress/full/')
+	public_path('d3compress/min/')
 
 Set uncompressed path
 
-	`Compress::setUncompressedPath('new/path/uncompressed/')`
+	Compress::setUncompressedPath('new/path/uncompressed/')
 
 Set compressed path
 
-	`Compress::setUncompressedPath('new/path/compressed/')`
+	Compress::setUncompressedPath('new/path/compressed/')
 
 Optimise PNG file
 
-	`Compress::png('image.png')`
+	Compress::png('image.png')
+
+	return Array (
+				    [mime_type] => image/png
+				    [original_file] => /original/path/full/image.png
+				    [optimized_file] => /original/path/min/image_opt.png
+				    [original_zize] => 1078921
+				    [optimized_zize] => 1067163
+				)
+	
