@@ -518,6 +518,10 @@ class Compress
 
  	/*
     * Config optimization for PNG files
+    *
+    * @param string $image origin image
+    * @param string $image_target image optimised
+    *
     * @return mix false when error exists or file path when is success
     */
     private function pngCrush($image,$image_target) {
@@ -530,6 +534,10 @@ class Compress
 
     /*
     * Config optimization for JPG/JPEG files
+    *
+    * @param string $image origin image
+    * @param string $image_target image optimised
+    *
     * @return mix false when error exists or file path when is success
     */
     private function jpgOptimize($image,$image_target,$mime="image/jpg") {
@@ -542,6 +550,10 @@ class Compress
 
     /*
     * Config optimization for CSS files
+    *
+    * @param string $css origin css file
+    * @param string $css_target css file optimised
+    *
     * @return mix false when error exists or file path when is success
     */
     private function cssMinify($css,$css_target) {
@@ -555,6 +567,10 @@ class Compress
 
     /*
     * Config optimization for JS files
+    *
+    * @param string $js origin js file
+    * @param string $js_target js file optimised
+    *
     * @return mix false when error exists or file path when is success
     */
     private function jsMinify($js,$js_target) {
@@ -568,6 +584,7 @@ class Compress
 
     /*
     * Send to potimize file
+    *
     * @param string $url - url to send file
     * @param string $target - file optimized
     * @params array $args - common args
